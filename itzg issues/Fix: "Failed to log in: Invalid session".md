@@ -38,4 +38,9 @@ barseghyanartur asked this question in Q&A:
 > ```
 > 
 > I do restart the game and the launcher, but the error persists. Any tips? Thanks in advance!
+>
+>
 
+>
+>taeraeyttaejae on Jan 24, 2022
+>You have to pass ONLINE_MODE: "FALSE" in your environment variables, put it below DEBUG for example.
