@@ -1,4 +1,4 @@
-
+# Set Up Cluster in Kubernetes with Minikube
 
 Step 4 – Install kubectl (Official Repo)
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg \
@@ -12,21 +12,23 @@ sudo apt-get update
 sudo apt-get install -y kubectl
 kubectl version --client
 
+---
 Step 5 – Install Minikube (Official Binary)
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube version
 
+---
 Step 6 – Install Python, pip, venv, pipx, and Ansible
 sudo apt-get install -y python3 python3-pip python3-venv pipx
 pipx ensurepath
 pipx install --include-deps ansible
 ansible --version
 
-
+---
 Step 7 - Install Prometheus: sudo apt install prometheus
 
-
+---
 Step 8 install helm
 https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 
@@ -34,7 +36,7 @@ https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 curl -fsSL https://packages.buildkite.com/helm-linux/helm-debian/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
 echo "deb [signed-by=/usr/share/keyrings/helm.gpg] https://packages.buildkite.com/helm-linux/helm-debian/any/ any main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
 
-
+---
 step 9 configure helm chart
 https://gitlab.com/nanuchi/youtube-tutorial-series/-/blob/master/prometheus-exporter/install-prometheus-commands.md
 command helm install prometheus prometheus-community/kube-prometheus-stack
