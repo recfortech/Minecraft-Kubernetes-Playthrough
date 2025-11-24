@@ -55,6 +55,30 @@ helm install prometheus prometheus-community/kube-prometheus-stack
 
 port forward grafana: kubectl port-forward deployment/prometheus-grafana 3000
 
+---
+### Upload YAML files from directory in Visual Studio Code
+With Minikube cluster already running, check status. Cluster should be empty.
+```
+kubectl get all
+```
+
+Upload Deployment YAML file.
+```
+kubectl apply -f deployment.yaml
+```
+Verify cluster and pod state.
+```
+kubectl get all
+```
+```
+kubectl get pod
+```
+Upload Services YAML file.
+```
+kubectl apply -f services.yaml
+```
+
+
 
 
 ---
