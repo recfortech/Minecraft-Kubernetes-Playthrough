@@ -5,7 +5,7 @@
 docker run -d --name minecraft-server -p 25565:25565 -v mc-data:/data recfortech/minecraft-world
 ```
 
-### Environment Variables
+#### Environment Variables
 1. Must accept the End User License Agreement
 ```
 -e EULA=TRUE
