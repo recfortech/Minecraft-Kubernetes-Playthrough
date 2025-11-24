@@ -1,19 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sre-abc-training-app
+  name: minecraft-server
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: sre-abc-training-app
+      app: minecraft-server
   template:
     metadata:
       labels:
-        app: sre-abc-training-app
+        app: minecraft-server
     spec:
       containers:
-      - name: sre-abc-training-app
-        image: cguillenmendez/sre-abc-training-python-app:latest
+      - name: minecraft-server
+        image: recfortech/minecraft-world:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 25565
+        env: 
+        - name: EULA
+          value: true
+        - name: ONLINE_MODE
+          value: false
