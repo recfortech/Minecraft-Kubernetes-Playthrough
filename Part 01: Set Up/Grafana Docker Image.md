@@ -1,6 +1,5 @@
-## Step : Grafana
-Grafana Docker image
-Run the Grafana Docker container
+## Step : Grafana Docker Image
+
 Start the Docker container by binding Grafana to external port 3000.
 
 Default admin user credentials are admin/admin.
