@@ -10,7 +10,7 @@ services:
       ONLINE_MODE: "FALSE"
     volumes:
       # Assign directory 'data' to the container's /data path
-      - F:\mcdata:/data
+      - ./data:/data
     # Restart policy
     restart: on-failure:5
     # The docker networks configuration for the minecraft service
