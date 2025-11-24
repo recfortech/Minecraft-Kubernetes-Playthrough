@@ -1,4 +1,4 @@
-# Prometheus
+# Prometheus Docker Image
 ## Run Prometheus Image File
 Prometheus Docker container starts with a sample configuration that exposes it on port 9090.
 ```
