@@ -1,5 +1,5 @@
 # Prometheus Installation in Kubernetes
-### Install in Terminal
+### Install in Terminal (Visual Studio Code)
 Make sure Minikube is running and using the docker driver before you continue.
 ```
 minikube status
@@ -33,7 +33,7 @@ Open the Prometheus dashboard and verify it's working by:
 Expected output: pictures
 
 ---
-### Upload YAML files from local directory in Visual Studio Code
+### Upload Minecraft Server YAML files
 With Minikube cluster already running, check status. Cluster should be empty.
 ```
 kubectl get all
