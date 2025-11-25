@@ -68,8 +68,8 @@ kubectl apply -f services.yaml
 ```
 kubectl get service
 ```
-5. Port-Forward
 ---
+5. Port-Forward
 - Run ```port-forward``` command in separate window.
 The command will run constantly to maintain the connection.
 ```
