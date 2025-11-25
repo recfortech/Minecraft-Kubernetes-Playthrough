@@ -12,7 +12,7 @@ kubectl get pods -n monitoring
 ```
 In a **new terminal** access the Prometheus UI:
 ```
-minikube service grafana -service -n monitoring
+minikube service grafana-service -n monitoring
 ```
 ![grafana get pods monitoring](https://github.com/user-attachments/assets/c7083cce-5d9b-4507-afa9-5cf6ba936bb7)
 
