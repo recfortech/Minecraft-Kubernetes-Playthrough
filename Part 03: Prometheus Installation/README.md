@@ -21,15 +21,16 @@ In a **new terminal** access the Prometheus UI:
 ```
 minikube service prometheus-service -n monitoring
 ```
-<img width="767" height="296" alt="image" src="https://github.com/user-attachments/assets/ce287041-9c07-407d-a0e9-0a3bd2f9e3f7" />
+<img width="770" height="273" alt="image" src="https://github.com/user-attachments/assets/4fc8f378-4434-4c94-9c17-9726fb097183" />
 
---- 
-### Using Ansible to Deploy
+##
+#### Using Ansible to Deploy
+
 Run: 
 ```
 ansible-playbook -i inventory.ini infra.yaml
 ```
-![ansible deploy](https://github.com/user-attachments/assets/1385c654-7584-4aac-8c9d-6c04bdea9999)
+<img width="919" height="219" alt="image" src="https://github.com/user-attachments/assets/5bfd4821-e421-4227-ac21-e56a307f946c" />
 
 ---
 ### Verify Prometheus Dashboard
