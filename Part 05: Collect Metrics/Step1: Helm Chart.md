@@ -19,35 +19,15 @@ helm repo update
 ```
 ![helm repo 1](https://github.com/user-attachments/assets/bbb73900-b3a2-4db7-9d15-cf3c30364432)
 ##
-#### Install Chart
+#### Install Helm Chart
+Install:
 ```
 helm install prometheus-server prometheus-community/prometheus
 ```
-##
-#### Check Components:
+
+Add itzg repository:
 ```
-kubectl get pods
+helm repo add itzg https://itzg.github.io/minecraft-server-charts/
 ```
-<img width="887" height="175" alt="image" src="https://github.com/user-attachments/assets/b21de9e8-b9b1-46ab-8afa-68284e740e94" />
+Then run ```helm search repo itzg``` to see the charts.
 
-#### Expose as a node point:
-
-  1. Check services:
-```
-kubectl get svc
-```
-<img width="897" height="175" alt="image" src="https://github.com/user-attachments/assets/98f689a1-bba1-4d7e-831c-b561ed34e5d2" />
-
-##
-
-  2. Expose service as NodePort:
-<img width="915" height="51" alt="image" src="https://github.com/user-attachments/assets/6a8a47cc-7915-4cf1-a432-27f742c6b17e" />
-
-##
-  3. New NodePort created:
-<img width="907" height="478" alt="image" src="https://github.com/user-attachments/assets/2676d032-4ddd-4e78-a648-9dd5a2ef5fe2" />
-
-##
-Metrics logs can also be initially seen here:
-
-<img width="1381" height="681" alt="image" src="https://github.com/user-attachments/assets/52f492f3-2c78-4934-ad86-ad97cb09b477" />
