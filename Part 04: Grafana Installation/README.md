@@ -10,14 +10,18 @@ Check the pod status:
 ```
 kubectl get pods -n monitoring
 ```
+<img width="736" height="70" alt="image" src="https://github.com/user-attachments/assets/fcb06bd2-ccb0-4c3f-8da6-c1766782b47b" />
+
+## 
 In a **new terminal** access the Prometheus UI:
 ```
 minikube service grafana-service -n monitoring
 ```
-![grafana get pods monitoring](https://github.com/user-attachments/assets/c7083cce-5d9b-4507-afa9-5cf6ba936bb7)
+<img width="776" height="260" alt="image" src="https://github.com/user-attachments/assets/5816a47e-e11d-4427-9537-9d398f3a90b0" />
 
---- 
-### Using Ansible to Deploy
+
+##
+#### Using Ansible to Deploy
 Run: 
 ```
 ansible-playbook -i inventory.ini infra_grafana.yaml
@@ -31,4 +35,4 @@ Login:  ```admin/admin```
 
 Go to **Configuration > Data Sources**  to check Prometheus, and Dashboards to see the "Example Dashboard".
 
-<img width="1398" height="818" alt="image" src="https://github.com/user-attachments/assets/d18d804b-1ea0-4471-bfd9-2835a973e331" />
+<img width="1319" height="456" alt="image" src="https://github.com/user-attachments/assets/dd5226cf-7f96-450c-ac55-65f9cdee3f9b" />
