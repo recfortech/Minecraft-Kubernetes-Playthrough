@@ -34,6 +34,10 @@ data:
       - "/etc/prometheus/rules/*.rules" # Placeholder for future alerting rules
 
     scrape_configs:
+      - job_name: 'minecraft-server'
+        static_configs:
+          -targets: ['localhost:25565']
+           
       - job_name: 'prometheus'
         static_configs:
           - targets: ['localhost:9090']
