@@ -69,11 +69,14 @@ kubectl apply -f services.yaml
 kubectl get service
 ```
 5. Port-Forward
+---
 - Run ```port-forward``` command in separate window.
 The command will run constantly to maintain the connection.
 ```
 kubectl port-forward service/minecraft-server 25565:25565
 ```
+<img width="778" height="87" alt="image" src="https://github.com/user-attachments/assets/c6b27ed2-cf68-44f7-a63c-691990c1c4e1" />
+
 ---
 ## Open Minecraft Launcher
 1. Open Minecraft and navigate to the Multiplayer menu.
