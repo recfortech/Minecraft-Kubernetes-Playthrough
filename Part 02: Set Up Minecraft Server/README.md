@@ -2,8 +2,8 @@
 <img width="514" height="147" alt="image" src="https://github.com/user-attachments/assets/e1389e82-8e25-4922-87ef-8fa4bf9d01c7" />
 
 
-## Pull image from DockerHub
-Minecraft Server Image: **recfortech/minecraft-world**
+### Pull image from DockerHub
+Minecraft Server Image name: **recfortech/minecraft-world**
 
 [View on Docker Hub](https://hub.docker.com/r/recfortech/minecraft-world)
 
@@ -19,7 +19,7 @@ Verify the installation:
 minikube status
 ```
 ---
-## YAML files:
+### YAML files:
 
 Deployment YAML:
 ```
@@ -49,7 +49,7 @@ spec:
       targetPort: 25565
 ```
 --- 
-## Deploy the application
+### Deploy the application
 1. Apply the **deployment.yaml**
 ```
 kubectl apply -f deployment.yaml
@@ -69,16 +69,17 @@ kubectl apply -f services.yaml
 kubectl get service
 ```
 ---
-5. Port-Forward
-- Run ```port-forward``` command in separate window.
+### Port-Forward
+Run ```port-forward``` command in separate window.
 The command will run constantly to maintain the connection.
+
 ```
 kubectl port-forward service/minecraft-server 25565:25565
 ```
 <img width="778" height="87" alt="image" src="https://github.com/user-attachments/assets/c6b27ed2-cf68-44f7-a63c-691990c1c4e1" />
 
 ---
-## Open Minecraft Launcher
+### Open Minecraft Launcher
 1. Open Minecraft and navigate to the Multiplayer menu.
 2. Click Add Server.
 3. Assign Server Name of choice.
