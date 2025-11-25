@@ -16,6 +16,7 @@ kubectl get pods -n monitoring
 ```
 <img width="654" height="57" alt="image" src="https://github.com/user-attachments/assets/800c44ff-8719-4264-87c7-4f91fd949e12" />
 
+##
 In a **new terminal** access the Prometheus UI:
 ```
 minikube service prometheus-service -n monitoring
