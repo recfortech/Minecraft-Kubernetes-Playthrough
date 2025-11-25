@@ -87,3 +87,10 @@ kubectl port-forward service/minecraft-server 25565:25565
 6. Join the server.
 
 ![minecraft host port](https://github.com/user-attachments/assets/cf8bf1d2-604d-4c65-a286-8e3841e28f1d)
+
+---
+## Check Kubernetes Dashboard
+```
+minikube dashboard
+```
+
