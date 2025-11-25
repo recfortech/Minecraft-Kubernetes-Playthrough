@@ -26,6 +26,12 @@ minikube service prometheus-service -n monitoring
 ### Using Ansible to Deploy
 Run: 
 ```
+kubectl apply -f iac_playbook.yaml
+```
+```
+kubectl apply -f ansible_playbook.yaml
+```
+```
 ansible-playbook -i inventory.ini infra.yaml
 ```
 ![ansible deploy](https://github.com/user-attachments/assets/1385c654-7584-4aac-8c9d-6c04bdea9999)
