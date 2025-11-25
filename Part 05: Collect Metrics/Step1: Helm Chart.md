@@ -47,3 +47,7 @@ kubectl get svc
   3. New NodePort created:
 <img width="907" height="478" alt="image" src="https://github.com/user-attachments/assets/2676d032-4ddd-4e78-a648-9dd5a2ef5fe2" />
 
+##
+Metrics logs can also be initially seen here:
+
+<img width="1381" height="681" alt="image" src="https://github.com/user-attachments/assets/52f492f3-2c78-4934-ad86-ad97cb09b477" />
