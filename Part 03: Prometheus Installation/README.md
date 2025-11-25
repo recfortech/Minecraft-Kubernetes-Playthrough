@@ -20,6 +20,8 @@ In a **new terminal** access the Prometheus UI:
 ```
 minikube service prometheus-service -n monitoring
 ```
+<img width="767" height="296" alt="image" src="https://github.com/user-attachments/assets/ce287041-9c07-407d-a0e9-0a3bd2f9e3f7" />
+
 --- 
 ### Using Ansible to Deploy
 Run: 
