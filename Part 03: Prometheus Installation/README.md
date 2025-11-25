@@ -39,18 +39,6 @@ Open the Prometheus dashboard and verify it's working by:
 - Query > **prometheus_build_info**
 ![prometheus dashboard](https://github.com/user-attachments/assets/89250d32-1ed9-49cf-aa25-826cbab6cff4)
 
----
-### Upload Minecraft Server YAML files
-With Minikube cluster already running, check status. Cluster should be empty.
-```
-kubectl get all
-```
-
-Upload Deployment YAML file.
-```
-kubectl apply -f deployment.yaml
-```
-
 
 
 
