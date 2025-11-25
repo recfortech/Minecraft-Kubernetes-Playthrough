@@ -88,9 +88,16 @@ kubectl port-forward service/minecraft-server 25565:25565
 
 ![minecraft host port](https://github.com/user-attachments/assets/cf8bf1d2-604d-4c65-a286-8e3841e28f1d)
 
+<img width="924" height="563" alt="image" src="https://github.com/user-attachments/assets/a2aa0a8c-dda4-494b-813a-b3339c8220ca" />
+
 ---
 ## Check Kubernetes Dashboard
+Run:
 ```
 minikube dashboard
 ```
+Open in browser:
 
+<img width="919" height="193" alt="image" src="https://github.com/user-attachments/assets/f945ccc1-621e-493b-b4bf-52bde5185154" />
+
+<img width="1319" height="480" alt="image" src="https://github.com/user-attachments/assets/832a566d-9cdd-43ff-9377-57c4105a1631" />
