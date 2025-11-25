@@ -14,7 +14,7 @@ Check the pod status:
 ```
 kubectl get pods -n monitoring
 ```
-![minikube service prometheus-service -n monitoring1](https://github.com/user-attachments/assets/bd54cce6-e2eb-4261-b7ec-6121cf44954b)
+<img width="654" height="57" alt="image" src="https://github.com/user-attachments/assets/800c44ff-8719-4264-87c7-4f91fd949e12" />
 
 In a **new terminal** access the Prometheus UI:
 ```
