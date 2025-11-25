@@ -1,9 +1,21 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraft-server
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: minecraft-server
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: minecraft-server
