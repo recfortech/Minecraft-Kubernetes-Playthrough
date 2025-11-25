@@ -1,9 +1,6 @@
 # IBM SRE Academy Final Project
-### Step by step walkthrough on setting up, running and monitoring Minecraft in Kubernetes
----
-Project Details:
-- Run on Windows OS through WSL
-- Created Minecraft server image
+
+#### Step by step walkthrough on setting up, running and monitoring Minecraft in Kubernetes
 
 
 ## Tools Utilized
