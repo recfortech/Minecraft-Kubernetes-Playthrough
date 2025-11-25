@@ -58,6 +58,13 @@ sudo apt-get update
 sudo apt-get install -y kubectl
 kubectl version --client
 ```
+>
+>To fix this error, follow these [Instalation Steps](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux)
+>
+><img width="694" height="66" alt="image" src="https://github.com/user-attachments/assets/b4e825b4-5713-4638-b752-10df1dc24479" />
+>
+
+
 Step 4: Install Minikube
 ---
 - In Ubuntu:
