@@ -1,13 +1,14 @@
 # Run Local Minecraft Server
-<img width="1170" height="500" alt="image" src="https://github.com/user-attachments/assets/eb883af5-a0fd-4251-9e73-163f888f5fd3" />
+<img width="514" height="147" alt="image" src="https://github.com/user-attachments/assets/e1389e82-8e25-4922-87ef-8fa4bf9d01c7" />
 
 
 ## Pull image from DockerHub
-Minecraft Server Image
+Minecraft Server Image: **recfortech/minecraft-world**
+
 [View on Docker Hub](https://hub.docker.com/r/recfortech/minecraft-world)
 
 ---
-Open VSC in project directory
+Open VSC in project directory.
 
 Start Minikube and open a local Kubernetes cluster:
 ```
@@ -18,10 +19,8 @@ Verify the installation:
 minikube status
 ```
 ---
-## Deploy the Application
+## YAML files:
 
-YAML files:
----
 Deployment YAML:
 ```
 containers:
@@ -36,15 +35,47 @@ containers:
           value: "false"
 ```
 Service YAML:
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: minecraft-server
+spec:
+  selector:
+    app: minecraft-server
+  ports:
+    - protocol: TCP 
+      port: 25565
+      targetPort: 25565
+```
+--- 
+## Deploy the application
+1. Apply the **deployment.yaml**
+```
+kubectl apply -f deployment.yaml
+```
+2. Verify the Pod status:
 
-
+Creating the Pods may take a couple minutes.
+```
+kubectl get pods -a
+```
+3. Apply the **services.yaml**
+```
+kubectl apply -f services.yaml
+```
+4. Verify the Service:
+```
+kubectl get service
+```
+5. Port-Forward
 - Run ```port-forward``` command in separate window.
 The command will run constantly to maintain the connection.
 ```
 kubectl port-forward service/minecraft-server 25565:25565
 ```
 ---
-### 2. Open Minecraft Launcher
+## Open Minecraft Launcher
 1. Open Minecraft and navigate to the Multiplayer menu.
 2. Click Add Server.
 3. Assign Server Name of choice.
