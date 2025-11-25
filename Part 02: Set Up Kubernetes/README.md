@@ -17,6 +17,12 @@ In a **new terminal** access the Prometheus UI:
 minikube service prometheus-service -n monitoring
 ```
 --- 
+### Using Ansible to Deploy
+Run: 
+```
+ansible-playbook -i inventory.ini infra.yaml
+```
+---
 ### Verify Prometheus Dashboard
 Open the Prometheus dashboard and verify it's working by:
 
