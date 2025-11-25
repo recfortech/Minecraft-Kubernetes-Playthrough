@@ -26,4 +26,32 @@ Open the Prometheus dashboard and verify it's working by:
 
 Expected output: pictures
 
+---
+### Upload YAML files from local directory in Visual Studio Code
+With Minikube cluster already running, check status. Cluster should be empty.
+```
+kubectl get all
+```
+
+Upload Deployment YAML file.
+```
+kubectl apply -f deployment.yaml
+```
+Verify cluster and pod state.
+```
+kubectl get all
+```
+```
+kubectl get pod
+```
+Upload Services YAML file.
+```
+kubectl apply -f services.yaml
+```
+Verify Service state.
+```
+kubectl get service
+```
+
+
 
