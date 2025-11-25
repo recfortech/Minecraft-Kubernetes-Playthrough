@@ -54,13 +54,6 @@ Step 3: Install kubectl
 ---
 - In Ubuntu:
 ```
-sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg \
-  https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key
-
-echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] \
-  https://pkgs.k8s.io/core:/stable:/v1.31/deb/ /" \
-  | sudo tee /etc/apt/sources.list.d/kubernetes.list
-
 sudo apt-get update
 sudo apt-get install -y kubectl
 kubectl version --client
