@@ -121,9 +121,6 @@ port forward grafana: kubectl port-forward deployment/prometheus-grafana 3000
 
 
 ---
-Docker Hub: https://hub.docker.com/r/recfortech/minecraft-world
+open visual studio code Open a Remote Window
 
-Docker CLI image pull
-docker pull recfortech/minecraft-world:latest
-
-docker run -d --name minecraft-server -p 25565:25565 -v mc-data:/data -e EULA=TRUE -e ONLINE_MODE=FALSE recfortech/minecraft-world
+###Commands minikube start
