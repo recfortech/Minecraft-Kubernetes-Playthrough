@@ -4,8 +4,8 @@ Integrate cAdvisor with Prometheus to collect container-level metrics and displa
 ##
 Check current number of metrics in Prometheus before and after installation to verify. 
 - Prometheus Dashboard > Enter ```count({__name__=~".+"})``` > Execute
+
   
-##
 ## Step 1: Running cAdvisor
 
 Deploy cAdvisor using the provided YAML file:
