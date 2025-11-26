@@ -36,3 +36,7 @@ Login:  ```admin/admin```
 Go to **Configuration > Data Sources**  to check Prometheus, and Dashboards to see the "Example Dashboard".
 
 <img width="1319" height="456" alt="image" src="https://github.com/user-attachments/assets/dd5226cf-7f96-450c-ac55-65f9cdee3f9b" />
+
+
+<img width="1305" height="688" alt="image" src="https://github.com/user-attachments/assets/9a1a5489-2b10-4da7-a9af-c92f4a17ea62" />
+
