@@ -1,9 +1,0 @@
-
-Set up the Telemetry pipeline:
-```
-kubectl apply -f otel-collector.yaml
-```
-```
-kubectl apply -f jaeger.yaml
-```
- 
