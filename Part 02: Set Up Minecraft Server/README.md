@@ -18,7 +18,7 @@ Verify the installation:
 ```
 minikube status
 ```
----
+##
 ### YAML files:
 
 Deployment YAML:
@@ -48,7 +48,7 @@ spec:
       port: 25565
       targetPort: 25565
 ```
---- 
+##
 ### Deploy the application
 1. Apply the **deployment.yaml**
 ```
@@ -68,7 +68,7 @@ kubectl apply -f services.yaml
 ```
 kubectl get service
 ```
----
+##
 ### Port-Forward
 Run ```port-forward``` command in separate window.
 The command will run constantly to maintain the connection.
@@ -78,7 +78,7 @@ kubectl port-forward service/minecraft-server 25565:25565
 ```
 <img width="778" height="87" alt="image" src="https://github.com/user-attachments/assets/c6b27ed2-cf68-44f7-a63c-691990c1c4e1" />
 
----
+##
 ### Open Minecraft Launcher
 1. Open Minecraft and navigate to the Multiplayer menu.
 2. Click Add Server.
@@ -91,7 +91,7 @@ kubectl port-forward service/minecraft-server 25565:25565
 
 <img width="924" height="563" alt="image" src="https://github.com/user-attachments/assets/a2aa0a8c-dda4-494b-813a-b3339c8220ca" />
 
----
+##
 ## Check Kubernetes Dashboard
 Run:
 ```
