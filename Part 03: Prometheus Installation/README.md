@@ -35,11 +35,11 @@ ansible-playbook -i inventory.ini infra.yaml
 ##
 ### Verify Dashboard:
 
-- ### Kubernetes Dashboard
+- ## Kubernetes Dashboard
 ```
 minikube dashboard
 ```
-- ### Prometheus Dashboard
+- ## Prometheus Dashboard
 Open the Prometheus dashboard and verify it's working by:
 
 1. Navigating to Status > Target Health (blue icon) to check the health of your targets.
