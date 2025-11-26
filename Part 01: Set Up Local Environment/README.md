@@ -91,15 +91,7 @@ Step 6: Install Visual Studio Code
 - Download all files in the [Instalation Folder](https://github.com/recfortech/Minecraft-Kubernetes-Playthrough/tree/76e05e13596c5b1d297fd4178526ada86d63120a/Part%2001%3A%20Set%20Up%20Local%20Environment/Installation%20Files) and save in the new directory.
 - Open the terminal from the new directory.
 ---
-Step 7: Starting Minikube
----
-- In WSL Terminal
-```
-minikube start --driver=docker
-kubectl get nodes
-```
----
-Step 8: Verification
+Step 7: Verification
 ---
 Run the following commands to check that all tools are working properly:
 ```
@@ -109,4 +101,12 @@ docker --version
 minikube version
 kubectl version --client
 ansible --version
+```
+---
+Step 8: Starting Minikube
+---
+- In WSL Terminal
+```
+minikube start --driver=docker
+kubectl get nodes
 ```
