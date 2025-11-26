@@ -48,6 +48,3 @@ Open the Prometheus dashboard and verify it's working by:
   
 ![prometheus dashboard](https://github.com/user-attachments/assets/89250d32-1ed9-49cf-aa25-826cbab6cff4)
 
-
-
-
