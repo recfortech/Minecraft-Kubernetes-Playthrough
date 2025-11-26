@@ -76,6 +76,22 @@ networks:
     # The minecraft network will be created if it does not exist
     name: minecraft
 ```
+
+#### "Minecraft Network" created for stack in ```docker-compose```
+- Prometheus server URL: ```http://prometheus:9090```
+
+> Docker CLI:
+```
+docker run -d --name prometheus --network minecraft --network-alias prometheus -p 9090:9090 prom/prometheus
+```
+>
+
+- Grafana server URL: http://grafana:3000
+> Docker CLI
+```
+docker run -d --name grafana -p 3000:3000 grafana/grafana
+```
+
 ##
 ### Open Minecraft Launcher
 1. Open Minecraft and navigate to the Multiplayer menu.
@@ -87,10 +103,10 @@ networks:
 
 > Server Address will be the port mapped or bound the container to the PC
 > localhost:25565
-
-Confirm the correct IP address 
-•	Local IP: On the server computer, open the command prompt and type ipconfig (Windows) or ip a (Linux) to find the local IPv4 address. This is the address you should use to connect from another computer on the same network.
-•	localhost: If connecting from the same computer that the server is running on, use localhost or 127.0.0.1 as the server address. 
+>
+>Confirm the correct IP address 
+> •	Local IP: On the server computer, open the command prompt and type ipconfig (Windows) or >ip a (Linux) to find the local IPv4 address. This is the address you should use to connect >from another computer on the same network.
+> •	localhost: If connecting from the same computer that the server is running on, use >localhost or 127.0.0.1 as the server address. 
 
 ![minecraft host port](https://github.com/user-attachments/assets/cf8bf1d2-604d-4c65-a286-8e3841e28f1d)
 
