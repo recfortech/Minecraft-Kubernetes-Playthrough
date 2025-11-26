@@ -32,13 +32,20 @@ ansible-playbook -i inventory.ini infra.yaml
 ```
 <img width="919" height="219" alt="image" src="https://github.com/user-attachments/assets/5bfd4821-e421-4227-ac21-e56a307f946c" />
 
----
-### Verify Prometheus Dashboard
+##
+### Verify Dashboard:
+
+- ### Kubernetes Dashboard
+```
+minikube dashboard
+```
+- ### Prometheus Dashboard
 Open the Prometheus dashboard and verify it's working by:
 
-- Navigating to Status > Target Health (blue icon) to check the health of your targets.
-- Query > **up**
-- Query > **prometheus_build_info**
+1. Navigating to Status > Target Health (blue icon) to check the health of your targets.
+2. Query > **up**
+3. Query > **prometheus_build_info**
+  
 ![prometheus dashboard](https://github.com/user-attachments/assets/89250d32-1ed9-49cf-aa25-826cbab6cff4)
 
 
