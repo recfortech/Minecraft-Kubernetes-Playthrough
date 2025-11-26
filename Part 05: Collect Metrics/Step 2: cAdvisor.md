@@ -4,6 +4,7 @@ Integrate cAdvisor with Prometheus to collect container-level metrics and displa
 ##
 Check current number of metrics in Prometheus before and after installation to verify. 
 - Prometheus Dashboard > Enter ```count({__name__=~".+"})``` > Execute
+Before
 ##
 ## Step 1: Running cAdvisor
 
@@ -36,3 +37,4 @@ kubectl get deployment -n monitoring
 ```
 kubectl rollout restart deployment prometheus-deployment -n monitoring
 ```
+<img width="1315" height="625" alt="image" src="https://github.com/user-attachments/assets/286c3d11-abf3-4247-99dd-fe821a991cfa" />
