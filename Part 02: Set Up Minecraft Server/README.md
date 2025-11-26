@@ -58,7 +58,7 @@ kubectl apply -f deployment.yaml
 
 Creating the Pods may take a couple minutes.
 ```
-kubectl get pods -a
+kubectl get pods
 ```
 3. Apply the **services.yaml**
 ```
