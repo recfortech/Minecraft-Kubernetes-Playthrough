@@ -50,6 +50,7 @@ newgrp docker
 sudo systemctl enable --now docker
 docker version
 ```
+---
 Step 3: Install kubectl
 ---
 - In Ubuntu:
@@ -58,13 +59,7 @@ sudo apt-get update
 sudo apt-get install -y kubectl
 kubectl version --client
 ```
->
->To fix this error, follow these [Instalation Steps](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux)
->
-><img width="694" height="66" alt="image" src="https://github.com/user-attachments/assets/b4e825b4-5713-4638-b752-10df1dc24479" />
->
-
-
+---
 Step 4: Install Minikube
 ---
 - In Ubuntu:
@@ -73,6 +68,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube version
 ```
+---
 Step 5: Install Python and Ansible
 ---
 - In Ubuntu:
@@ -82,6 +78,7 @@ pipx ensurepath
 pipx install --include-deps ansible
 ansible --version
 ```
+---
 Step 6: Install Visual Studio Code
 ---
 
