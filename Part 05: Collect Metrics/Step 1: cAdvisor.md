@@ -29,6 +29,8 @@ Verify the role binding was created:
 ```
 kubectl get clusterrolebinding prometheus-pod-reader-binding-cluster
 ```
+<img width="916" height="105" alt="image" src="https://github.com/user-attachments/assets/f7b4a6c6-a37a-4df3-9e5a-a7970ca893cb" />
+
 ##
 ## Restart Deployments
 Restart deployments to include cAdvisor.
