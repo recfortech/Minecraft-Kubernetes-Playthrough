@@ -31,20 +31,29 @@ kubectl get clusterrolebinding prometheus-pod-reader-binding-cluster
 ```
 ##
 ## Restart Deployments
-Check deployment names with ```kubectl get deployment -n monitoring```
+Restart deployments to include cAdvisor.
 
-- ### Restart Prometheus deployment:
+Check deployment names with ```kubectl get deployment -n monitoring``` and restart.
+
+Open dashboards again to verify update.
+
+- ### Prometheus deployment:
+Restart command:
 ```
 kubectl rollout restart deployment prometheus-deployment -n monitoring
 ```
 
+Dashboard:
+
 <img width="1315" height="625" alt="image" src="https://github.com/user-attachments/assets/286c3d11-abf3-4247-99dd-fe821a991cfa" />
 
 
-- ### Restart Grafana deployment:
-
+- ### Grafana deployment:
+Restart command:
 ```
 kubectl rollout restart deployment grafana-deployment -n monitoring
 ```
+
+Dashboard:
 
 <img width="1314" height="672" alt="image" src="https://github.com/user-attachments/assets/7c31b60e-340b-4ffe-a076-34c5cc1b2382" />
