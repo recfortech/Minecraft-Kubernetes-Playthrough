@@ -24,10 +24,3 @@ Install:
 ```
 helm install prometheus-server prometheus-community/prometheus
 ```
-
-Add itzg repository:
-```
-helm repo add itzg https://itzg.github.io/minecraft-server-charts/
-```
-Then run ```helm search repo itzg``` to see the charts.
-
