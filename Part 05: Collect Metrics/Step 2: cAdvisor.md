@@ -47,4 +47,4 @@ kubectl rollout restart deployment prometheus-deployment -n monitoring
 kubectl rollout restart deployment grafana-deployment -n monitoring
 ```
 
-<img width="1305" height="688" alt="image" src="https://github.com/user-attachments/assets/9a1a5489-2b10-4da7-a9af-c92f4a17ea62" />
+<img width="1314" height="672" alt="image" src="https://github.com/user-attachments/assets/7c31b60e-340b-4ffe-a076-34c5cc1b2382" />
