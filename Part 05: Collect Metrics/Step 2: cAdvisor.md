@@ -28,3 +28,11 @@ Verify the role binding was created:
 ```
 kubectl get clusterrolebinding prometheus-pod-reader-binding-cluster
 ```
+
+Restart Prometheus deployment:
+```
+kubectl get deployment -n monitoring
+```
+```
+kubectl rollout restart deployment prometheus-deployment -n monitoring
+```
