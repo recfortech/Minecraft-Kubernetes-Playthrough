@@ -18,5 +18,5 @@
 |pipx + Ansible     |Automatization                          |
 |Helm               |Manages Kubernetes applications         |
 |Minecraft Launcher |Runs Minecraft                          |
-|Slack              |Messaging Platform                      |
+
 
