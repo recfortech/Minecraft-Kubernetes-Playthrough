@@ -76,8 +76,8 @@ networks:
     # The minecraft network will be created if it does not exist
     name: minecraft
 ```
-
-#### "Minecraft Network" created for stack in ```docker-compose```
+##
+### Create "Minecraft Network" in ```docker-compose```
 - Prometheus server URL: ```http://prometheus:9090```
 
 > Docker CLI:
@@ -111,3 +111,4 @@ docker run -d --name grafana --network minecraft --network-alias grafana -p 3000
 ![minecraft host port](https://github.com/user-attachments/assets/cf8bf1d2-604d-4c65-a286-8e3841e28f1d)
 
 <img width="924" height="563" alt="image" src="https://github.com/user-attachments/assets/a2aa0a8c-dda4-494b-813a-b3339c8220ca" />
+
