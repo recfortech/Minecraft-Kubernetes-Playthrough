@@ -89,7 +89,7 @@ docker run -d --name prometheus --network minecraft --network-alias prometheus -
 - Grafana server URL: http://grafana:3000
 > Docker CLI
 ```
-docker run -d --name grafana -p 3000:3000 grafana/grafana
+docker run -d --name grafana --network minecraft --network-alias grafana -p 3000:3000 grafana/grafana
 ```
 
 ##
