@@ -17,4 +17,5 @@ Login: ```admin/admin```
 
 3. Import available dashboards
 
+<img width="1318" height="398" alt="image" src="https://github.com/user-attachments/assets/48833712-e06b-41b4-8dbb-3e28e143755b" />
 
