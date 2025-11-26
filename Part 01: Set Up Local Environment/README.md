@@ -103,6 +103,11 @@ kubectl version --client
 ansible --version
 ```
 ---
+Install Docker Desktop
+---
+Download Docker Desktop [**here**](https://www.docker.com/products/docker-desktop)
+
+---
 Step 8: Starting Minikube
 ---
 - In WSL Terminal
