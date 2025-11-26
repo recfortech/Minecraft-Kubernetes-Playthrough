@@ -29,12 +29,22 @@ Verify the role binding was created:
 ```
 kubectl get clusterrolebinding prometheus-pod-reader-binding-cluster
 ```
+##
+## Restart Deployments
+Check deployment names with ```kubectl get deployment -n monitoring```
 
-Restart Prometheus deployment:
-```
-kubectl get deployment -n monitoring
-```
+- ### Restart Prometheus deployment:
 ```
 kubectl rollout restart deployment prometheus-deployment -n monitoring
 ```
+
 <img width="1315" height="625" alt="image" src="https://github.com/user-attachments/assets/286c3d11-abf3-4247-99dd-fe821a991cfa" />
+
+
+- ### Restart Grafana deployment:
+
+```
+kubectl rollout restart deployment grafana-deployment -n monitoring
+```
+
+<img width="1305" height="688" alt="image" src="https://github.com/user-attachments/assets/9a1a5489-2b10-4da7-a9af-c92f4a17ea62" />
