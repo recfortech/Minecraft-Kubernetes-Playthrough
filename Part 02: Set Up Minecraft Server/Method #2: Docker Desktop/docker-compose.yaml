@@ -8,7 +8,7 @@ services:
     environment:
       TYPE: AUTO_CURSEFORGE
       CF_API_KEY: $$2a$$10$$gYA2Wi9Ir.GjSNyT0G1j7e.KTUjHv3OzTxjPAyVRgVrwdm47WT2uS
-      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/new-simple-mods
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/christmas-new
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
       MEMORY: 4G
