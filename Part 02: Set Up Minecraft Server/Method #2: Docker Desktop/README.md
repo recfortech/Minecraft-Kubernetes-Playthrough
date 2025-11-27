@@ -16,28 +16,30 @@ Minecraft Server Image name: **recfortech/minecraft-world**
 docker run -d --name minecraft -p 25565:25565 -e EULA=true -v C:\some\path\on\my\pc:/data --restart on-failure recfortech/minecraft-world:latest
 ```
 
-## Option #2: Run Minecraft with Docker Compose
-
-1. Open ```docker-compose.yaml``` with Visual Studio Code.
-2. Save file in local directory.
-3. Run ```docker compose up -d``` including Prometheus and Grafana within that same directory.
-
-
 ##
 ### Create "Minecraft Network" in ```docker-compose```
 - Prometheus server URL: ```http://prometheus:9090```
 
-> Docker CLI:
+Docker CLI:
 ```
 docker run -d --name prometheus --network minecraft --network-alias prometheus -p 9090:9090 prom/prometheus
 ```
->
+
 
 - Grafana server URL: http://grafana:3000
-> Docker CLI
+
+Docker CLI
 ```
 docker run -d --name grafana --network minecraft --network-alias grafana -p 3000:3000 grafana/grafana
 ```
+
+## Option #2: Run Minecraft with Docker Compose
+
+1. Open ```docker-compose.yaml``` with Visual Studio Code.
+
+2. Save file in local directory.
+
+3. Run ```docker compose up -d```.
 
 ##
 ### Open Minecraft Launcher
