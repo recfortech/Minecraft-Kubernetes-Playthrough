@@ -14,7 +14,7 @@ services:
       MEMORY: 4G
     volumes:
       # Assign directory 'data' to the container's /data path
-      - L:\Minecraft Docker Server\mc-data:/data
+       - data:/data
     # Restart policy
     restart: on-failure:5
     # The docker networks configuration for the minecraft service
